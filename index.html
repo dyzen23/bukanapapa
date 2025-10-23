@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>writtn.exe</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="media/cssjs/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/7.css" />
+    <link rel="icon" href="media/favicon.png">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header">
+            <h1 title="A Letter 4 You" class="title">AL4U</h1>
+        </div>
+        <div class="sidebar">
+            <div class="window glass" style="height:auto;">
+                <div class="title-bar">
+                    <div class="title-bar-text">Sidebar</div>
+                </div>
+                <div class="window-body has-space" style="height:auto">
+                    <p>Table Of Contents</p>
+                    <ul>
+                        <li><a href="#hello">hi, hello</a></li>
+                        <li><a href="#quotez">sum quote</a></li>
+                        <li><a href="#playlist">mixmatched playlist</a></li>
+                    </ul>
+                    <img  style="width: 200px;" src="media/hachiware.gif">
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="window glass active">
+                <div class="title-bar">
+                    <div class="title-bar-text" id="hello">howru.md</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                </div>
+                <div class="window-body has-space">
+                    <h2>hi, hello</h2>
+                    <p>
+                        heyyo, how r u today/tonight? me hope u do good! walaupun akhir-akhir ini kamu lagi capek ya... but that's okay, everyone can feel tired sometimes, termasuk kamu juga...
+                    </p>
+                    <p>
+                        Ku tau ga semua orang- termasuk aku sendiri- bisa 100% ngerasain apa yang kamu rasain, tapi jujur, there's little to no things that can hurt more than watching someone you care gettin hurt... 
+                        Aku gaakan capek buat ngingetin kamu kalo kamu ga sendirian, karena aku gaakan kemana-mana, paling ilang tidur sebentar,.,.
+                    </p>
+                    <p>
+                        What I wanted to talk abt here is, how grateful I am to have known you since. Makasih udah jadi safe place buat aku cerita, makasih udah mau terima aku sebagai diri aku sendiri. Gak banyak orang bisa lihat aku segimana aku aslinya karena aku takut dicap aneh, that's why I am glad that I can find my place to be myself here with you... 
+                        I know there's been up and downs between us, tapi yasudahlah, yang sudah lalu biarlah berlalu...
+                    </p>
+                    <p>
+                        Aku ga tau sampai berapa lama ini bisa bertahan (hoping for a long time), knowing that we're nothing more than a friends rn, but I'll cherish every moments while it lasts...
+                    </p>
+                    <p>
+                        So, in a quick conclusion, thank you for completing my life
+                    </p>
+                </div>
+            </div>
+            <div class="window glass active">
+                <div class="title-bar">
+                    <div class="title-bar-text" id="quotez">whenyoudown.md</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                </div>
+                <div class="window-body has-space">
+                    <h2>click for sum quote</h2>
+                    <br/>
+                    <button onclick="generateQuote()">Porter once said...</button>
+                    <h3 style="text-align: center; font-style: italic;" id="quote">click da button</h3>
+                </div>
+            </div>
+            <div class="window glass active">
+                <div class="title-bar">
+                    <div class="title-bar-text" id="playlist">muzik.md</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                </div>
+                <div class="window-body has-space">
+                    <h2>mixmatched human-curated playlist</h2> <br/>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3nYeUfamQ4eu48GCUbjuPk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="window glass">
+                <div class="title-bar">
+                    <div class="title-bar-text">footer.md</div>
+                    <div class="title-bar-controls">
+                    <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body has-space">
+                    <p>
+                        made with care, jangan lupa makan yah ;) <br/>
+                        <i>z, 24th Oct 25, 02:51 AM</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    const quotes = [
+      "“Everything you try to hold onto will change you.” – Porter Robinson, *Something Comforting*",
+      "“I'll be okay, now that I'm close to you.” – Porter Robinson, *Goodbye to a World*",
+      "“Look at the sky, I'm still here.” – Porter Robinson, *Look at the Sky*",
+      "“You’ll be fine, you’ll be fine.” – Porter Robinson, *Something Comforting*",
+      "“I can make something good, oh something good.” – Porter Robinson, *Look at the Sky*",
+      "“If I can make something beautiful, maybe I’ll be okay.” – Porter Robinson, *Trying to Feel Alive (live edit)*",
+      "“When the world is fading, you’re still shining.” – Porter Robinson, *Sea of Voices*",
+      "“I just want to feel alive again.” – Porter Robinson, *Something Comforting*",
+      "“Every day I wake up and I try to be brave.” – Porter Robinson, *Look at the Sky*",
+      "“All this time, I’ve been a ghost.” – Porter Robinson, *Musician*"
+    ];
+
+    function generateQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const quote = quotes[randomIndex];
+      document.getElementById("quote").textContent = quote;
+    }
+  </script>
+</html>
